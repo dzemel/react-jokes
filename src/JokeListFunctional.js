@@ -40,9 +40,7 @@ function JokeListFunctional({ numJokesToGet }) {
     }
   }
   useEffect(() => {
-    if (jokes.length === 0) {
-      getJokes();
-    }
+    getJokes();
   }, []);
 
   /* empty joke list, set to loading state, and then call getJokes */
